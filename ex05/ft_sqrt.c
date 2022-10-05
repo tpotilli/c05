@@ -6,21 +6,21 @@
 /*   By: tpotilli <tpotilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 08:33:45 by tpotilli          #+#    #+#             */
-/*   Updated: 2022/10/02 08:35:22 by tpotilli         ###   ########.fr       */
+/*   Updated: 2022/10/03 13:53:10 by tpotilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_sqrt(int nb)
+int	ft_sqrt(int nb)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    if (nb <= 0)
-        return (0);
-    while (i * i < nb && i <= 46430)
-        i++;
-    if (i * i == nb)
-        return (1);
-    else
-        return (0);
+	i = 0;
+	if (nb <= 0)
+		return (0);
+	while (i * i < nb && i <= 46340)
+		i++;
+	if (i * i == nb)
+		return (i);
+	else
+		return (0);
 }
